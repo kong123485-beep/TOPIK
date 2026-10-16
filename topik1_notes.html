@@ -1,0 +1,217 @@
+﻿<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TOPIK I (初級) 一頁 A4 核心筆記</title>
+    <style>
+        /* 針對 A4 紙張與列印的優化設定 */
+        @page {
+            size: A4;
+            margin: 15mm 15mm 15mm 15mm;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+            line-height: 1.5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+            box-sizing: border-box;
+        }
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            font-size: 24px;
+            margin-bottom: 5px;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #7f8c8d;
+            font-size: 13px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+        .section {
+            margin-bottom: 15px;
+        }
+        h2 {
+            color: #2980b9;
+            font-size: 16px;
+            border-left: 4px solid #3498db;
+            padding-left: 8px;
+            margin-top: 10px;
+            margin-bottom: 8px;
+            background-color: #ecf0f1;
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+        h3 {
+            font-size: 14px;
+            color: #34495e;
+            margin-top: 8px;
+            margin-bottom: 4px;
+        }
+        ul {
+            margin-top: 0;
+            margin-bottom: 8px;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 4px;
+        }
+        /* 突顯韓文文法與重點 */
+        strong {
+            color: #e74c3c;
+        }
+        .korean {
+            font-weight: bold;
+            color: #2c3e50;
+            background-color: #f8f9fa;
+            padding: 1px 4px;
+            border-radius: 3px;
+            border: 1px solid #e9ecef;
+        }
+        /* 兩欄式佈局，善用 A4 橫向空間 */
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .footer-note {
+            margin-top: 15px;
+            padding: 8px;
+            background-color: #f9f9f9;
+            border: 1px dashed #bdc3c7;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+        /* 列印時強制背景顏色顯現 */
+        @media print {
+            body { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+            h2 { background-color: #ecf0f1 !important; }
+            .korean { background-color: #f8f9fa !important; }
+            .footer-note { background-color: #f9f9f9 !important; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>📝 TOPIK I (初級) 一頁 A4 核心筆記</h1>
+    <div class="subtitle">目標：高效衝刺 1、2 級｜全選擇題無寫作</div>
+
+    <div class="grid">
+        <!-- 左半邊：核心文法 -->
+        <div class="col">
+            <div class="section">
+                <h2>一、終結詞尾（名詞與動/形現在式）</h2>
+                <h3>1. 名詞結尾</h3>
+                <ul>
+                    <li><span class="korean">名詞 + 입니다 / 입니까?</span>：是...嗎？（正式高規格）</li>
+                    <li><span class="korean">名詞 + 이에요 / 예序</span>：是...（日常非正式｜有尾音用 <span class="korean">이에요</span> / 無尾音用 <span class="korean">예요</span>）</li>
+                </ul>
+                <h3>2. 動詞/形容詞結尾</h3>
+                <ul>
+                    <li><span class="korean">動/形 + ㅂ니다 / 습니다</span>：正式型（無尾音用 <span class="korean">ㅂ니다</span> / 有尾音用 <span class="korean">습니다</span>）</li>
+                    <li><span class="korean">動/形 + 아요 / 어要素</span>：口語型（母音 <span class="korean">ㅏ, ㅗ</span> 用 <span class="korean">아요</span> / 其他用 <span class="korean">어요</span>）</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>二、時態與否定</h2>
+                <ul>
+                    <li><strong>過去式</strong>：動/形 + <span class="korean">았/었/했어요</span></li>
+                    <li><strong>未來式/打算</strong>：動/形 + <span class="korean">-(으)ㄹ 거예요</span></li>
+                    <li><strong>普通否定</strong>：<span class="korean">안</span> + 動/形（不...）｜ 動/形 + <span class="korean">-지 않아요</span></li>
+                    <li><strong>能力否定</strong>：<span class="korean">못</span> + 動（不能/沒辦法...）｜ 動 + <span class="korean">-지 못해요</span></li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>三、核心連接詞尾（句子相連）</h2>
+                <ul>
+                    <li><strong>並列/順序</strong>：動/形 + <span class="korean">-고</span>（和、然後）</li>
+                    <li><strong>轉折</strong>：動/形 + <span class="korean">-지만</span>（雖然...但是...）</li>
+                    <li><strong>原因</strong>：動/形 + <span class="korean">-아서/어서</span>（因為...所以... <strong>※後句不可接命令或共動句</strong>）</li>
+                    <li><strong>假定</strong>：動/形 + <span class="korean">-(으)면</span>（如果...的話）</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>四、必考文法助詞</h2>
+                <ul>
+                    <li><span class="korean">이/가</span>：主格助詞（強調主詞本身）</li>
+                    <li><span class="korean">은/는</span>：主題助詞（強調對比或主題介紹）</li>
+                    <li><span class="korean">을/를</span>：受格助詞（動作的目的物/對象）</li>
+                    <li><span class="korean">에</span>：定點時間、去向（例：1시에, 學校에 가요）</li>
+                    <li><span class="korean">에서</span>：動態場所（在某處做某事，例：學校에서 공부해요）</li>
+                    <li><span class="korean">(으)로</span>：工具、方向（往某處 / 用某工具）</li>
+                    <li><span class="korean">에게 / 한테</span>：與格助詞（給/對某人做某事）</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- 右半邊：高頻單字與解題關鍵 -->
+        <div class="col">
+            <div class="section">
+                <h2>五、常考疑問詞（聽力、閱讀前4題必考）</h2>
+                <ul>
+                    <li><span class="korean">언제</span>（什麼時候）→ 答案選<strong>時間/日期/點鐘</strong></li>
+                    <li><span class="korean">어디</span>（哪裡）→ 答案選<strong>場所/地點</strong></li>
+                    <li><span class="korean">누구</span>（誰）→ 答案選<strong>人物/職業/關係</strong></li>
+                    <li><span class="korean">무엇 / 뭐</span>（什麼）→ 答案選<strong>物品/具體動作</strong></li>
+                    <li><span class="korean">어떻게</span>（怎麼做）→ 答案選<strong>方法/交通工具</strong></li>
+                    <li><span class="korean">왜</span>（為什麼）→ 答案選含有 <span class="korean">-아서/어서</span> 的原因</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>六、閱讀測驗三大核心技巧</h2>
+                <h3>1. 第 31-33 題（選主題）</h3>
+                <ul>
+                    <li>關鍵：<strong>尋找重複出現次數最多的單字</strong>。</li>
+                    <li>例：文中出現 사과(蘋果)、바나나(香蕉)，答案直接鎖定 <span class="korean">과일</span>(水果)。</li>
+                </ul>
+                <h3>2. 第 34-39 題（短文填空）</h3>
+                <ul>
+                    <li>關鍵：<strong>注意空格前後的副詞與接續詞</strong>。</li>
+                    <li>看到 <span class="korean">그래서</span>(所以) 找因果；看到 <span class="korean">그러나/하지만</span>(但是) 找反義詞。</li>
+                </ul>
+                <h3>3. 第 40-42 題（圖表對照題）</h3>
+                <ul>
+                    <li>關鍵：<strong>不需要翻譯全文，直接玩對對碰</strong>。</li>
+                    <li>拿選項去跟圖表的 <strong>日期(일시)、金額(요금/가격)、地點(장소)</strong> 逐字核對。</li>
+                </ul>
+            </div>
+
+            <div class="section">
+                <h2>七、高頻對比副詞（加分關鍵）</h2>
+                <ul>
+                    <li><span class="korean">아주 / 매우</span> (非常) ｜ <span class="korean">조금</span> (一點點)</li>
+                    <li><span class="korean">일찍</span> (早早地) ｜ <span class="korean">늦게</span> (晚晚地)</li>
+                    <li><span class="korean">같이 / 함께</span> (一起) ｜ <span class="korean">혼자</span> (獨自)</li>
+                    <li><span class="korean">가장 / 제일</span> (最...)</li>
+                </ul>
+            </div>
+
+            <div class="footer-note">
+                <strong>💡 考前配分與過關標準提醒：</strong><br>
+                總分 200 分（聽力 100 分/30題、閱讀 100 分/40題）。<br>
+                • <strong>80 分以上</strong>：通過 1 級<br>
+                • <strong>140 分以上</strong>：通過 2 級<br>
+                前半段題目非常簡單，務必細心拿下；後半段遇到不會的單字切勿卡住，請利用文法與語氣推測答案。
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
