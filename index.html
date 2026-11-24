@@ -14,7 +14,7 @@
   .hero h1{font-family:Georgia,serif;font-size:64px;line-height:.9;margin:8px 0;letter-spacing:-2px}
   .hero p{color:#6b6e76;margin:6px 0 0}
   .badge{display:inline-block;background:#18181b;color:#fff;border-radius:999px;padding:5px 12px;font-size:11px}
-  .badge.green{background:#fdf0d5;color:#b08c4f}
+  .badge.new{background:#fdf0d5;color:#b08c4f}
   section{margin:28px 0}
   h2{font-size:22px;margin:0 0 4px} .sub{color:#a1a1aa;font-size:12px;margin-bottom:14px}
   .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:12px}
@@ -22,7 +22,9 @@
   a.card:hover{transform:translateY(-2px);box-shadow:0 12px 30px rgba(27,25,22,.1)}
   a.card b{font-family:monospace;font-size:13px;word-break:break-all}
   a.card small{display:block;color:#a1a1aa;font-size:11px;margin-top:4px}
+  a.card.featured{border-color:#e4dfd6;background:#fffbf0}
   .tag{font-size:10px;background:#eef5fc;color:#5a8ab5;border-radius:999px;padding:3px 8px;white-space:nowrap}
+  .tag.beige{background:#fffbf0;color:#b08c4f}
   .go{width:28px;height:28px;flex-shrink:0;border:1px solid #ede8df;border-radius:50%;display:grid;place-items:center}
   .note{background:#fffbf0;border:1px dashed #e4dfd6;border-radius:16px;padding:16px;font-size:13px;color:#6b6e76;line-height:1.7}
   .note b{color:#18181b}
@@ -39,13 +41,19 @@
     <span class="badge">KOREAN STUDY ARCHIVE</span>
     <h1>TOPIK<sup style="font-size:16px">®</sup></h1>
     <p>韓語能力考試學習筆記<br><span style="font-size:14px">한국어 능력시험 · 학습 아카이브</span></p>
-    <p style="margin-top:16px"><input id="q" placeholder="依檔名搜尋 / 파일명 검색 — 例如：72、94、topik1…" oninput="filter()"></p>
+    <p style="margin-top:16px"><input id="q" placeholder="依檔名搜尋 / 파일명 검색 — 例如：72、94、Grammar、topik1…" oninput="filter()"></p>
   </div>
+
+  <section>
+    <h2>文法總整理</h2><div class="sub">Grammar · 문법 총정리</div>
+    <div class="grid">
+      <a class="card featured" href="./Korean-Topik1-4-Grammar-V3.html"><span><b>Korean-Topik1-4-Grammar-V3.html</b><small>TOPIK I-IV 文法總整理 · Grammar V3</small></span><span><span class="tag beige">NEW · 文法</span> <span class="go">↗</span></span></a>
+    </div>
+  </section>
 
   <section>
     <h2>學習規劃</h2><div class="sub">Planning · 학습 계획</div>
     <div class="grid">
-      <a class="card" href="./規劃表.html"><span><b>規劃表.html</b><small>學習規劃表</small></span><span><span class="tag">規劃</span> <span class="go">↗</span></span></a>
       <a class="card" href="./Topik_study.html"><span><b>Topik_study.html</b><small>TOPIK 學習總覽</small></span><span><span class="tag">Guide</span> <span class="go">↗</span></span></a>
     </div>
   </section>
@@ -55,7 +63,6 @@
     <div class="grid">
       <a class="card" href="./topik1_notes.html"><span><b>topik1_notes.html</b><small>TOPIK I 筆記</small></span><span class="go">↗</span></a>
       <a class="card" href="./topik1_word.html"><span><b>topik1_word.html</b><small>TOPIK I 單字</small></span><span class="go">↗</span></a>
-      <a class="card" href="./topik1_youtube.html"><span><b>topik1_youtube.html</b><small>影音學習</small></span><span class="go">↗</span></a>
     </div>
   </section>
 
@@ -68,11 +75,12 @@
     </div>
   </section>
 
-  <div class="note"><b>⚠️ 點解之前入唔到？</b><br>
-  舊版 link 緊 <code>Korean-Topik1-4-Grammar-V3.html</code>，但你喺 GitHub 已經 delete 咗嗰個 file，所以㩒落去會 404。新版已經刪走咗嗰個死 link，淨返上面 8 個真係喺 repo 入面存在嘅 file。<br><br>
-  <b>注意大小寫：</b>GitHub Pages 係分大小寫嘅，<code>Topik_study.html</code> 同 <code>topik_study.html</code> 係兩個唔同 file。上面嘅 link 已經跟返你 screenshot 入面嘅實際檔名嚟寫，唔好自己改大小寫。</div>
+  <div class="note"><b>呢個 v2 跟返你最新 screenshot 嘅 repo 嚟寫：</b><br>
+  ✅ 有 link：<code>Korean-Topik1-4-Grammar-V3.html</code>、<code>Topik_study.html</code>、<code>topik1_notes.html</code>、<code>topik1_word.html</code>、<code>topik2_notes.html</code>、<code>Topik-94.html</code>、<code>72.html</code>（共 7 個）<br>
+  ⏸️ 暫時無 link：<code>topik1_youtube.html</code>、<code>規劃表.html</code> — 因為你最新嗰張圖入面 repo 已經無咗呢兩個 file，link 咗會 404。如果你之後重新 upload 返佢哋，話我知，我再加返入去。<br><br>
+  <b>注意大小寫：</b><code>Topik_study.html</code>、<code>Topik-94.html</code> 嘅 T 係大階，唔好改做細階。</div>
 </main>
-<footer class="wrap"><span>kong123485-beep / TOPIK</span><span>© 2026 · Minimal Index · 8 files</span></footer>
+<footer class="wrap"><span>kong123485-beep / TOPIK</span><span>© 2026 · v2 · 7 files</span></footer>
 <script>
 function filter(){
   var q=document.getElementById('q').value.toLowerCase();
