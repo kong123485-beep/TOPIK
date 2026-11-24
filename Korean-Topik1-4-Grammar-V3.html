@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>韓語文法總表《我的第一本韓語文法》TOPIK 1・2</title>
+<style>
+:root{--primary:#2563eb;--primary-dark:#1d4ed8;--bg:#f8fafc;--card-bg:#fff;--text-main:#1e293b;--text-muted:#64748b;--border:#e2e8f0;}
+*{box-sizing:border-box;margin:0;padding:0} body{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang HK","Microsoft JhengHei",sans-serif;background:var(--bg);color:var(--text-main);line-height:1.6;padding:20px}
+.container{max-width:1100px;margin:0 auto} header{text-align:center;margin-bottom:24px;padding:24px 16px;background:var(--card-bg);border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+header h1{font-size:1.6rem} header p{color:var(--text-muted);font-size:.95rem}
+.controls{display:flex;flex-wrap:wrap;gap:12px;justify-content:space-between;align-items:center;margin-bottom:20px;background:var(--card-bg);padding:16px;border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.08)}
+.filter-buttons{display:flex;flex-wrap:wrap;gap:8px} .filter-btn{padding:8px 14px;border:1px solid var(--border);background:#fff;border-radius:8px;cursor:pointer;font-size:.9rem;font-weight:500} .filter-btn.active{background:var(--primary);color:#fff;border-color:var(--primary)}
+.search-box{flex:1;min-width:240px;max-width:360px} .search-box input{width:100%;padding:9px 14px;border:1px solid var(--border);border-radius:8px;font-size:.95rem;outline:none}
+.section-card{background:var(--card-bg);border-radius:12px;box-shadow:0 1px 3px rgba(0,0,0,.08);margin-bottom:24px;overflow:hidden;width:100%}
+.section-header{padding:16px 20px;background:#f1f5f9;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center} .section-header h2{font-size:1.15rem}
+.badge{padding:4px 10px;border-radius:999px;font-size:.8rem;font-weight:600;background:#dbeafe;color:#1e40af} .badge-n2{background:#dcfce7;color:#166534}
+.table-wrapper{overflow-x:auto} table{width:100%;border-collapse:collapse;text-align:left;font-size:.94rem;table-layout:fixed}
+th,td{padding:13px 18px;border-bottom:1px solid var(--border);vertical-align:top} th{background:#fafafa;color:var(--text-muted);white-space:nowrap}
+.lesson-col{font-weight:600;color:var(--primary-dark);white-space:nowrap;width:110px;min-width:110px;max-width:110px} .topic-col{width:32%;min-width:32%;max-width:32%;font-weight:500} .example-col{color:#334155;overflow-wrap:break-word}
+tbody tr{cursor:pointer} tbody tr:hover td{background:#f8fafc}
+.no-results{text-align:center;padding:40px 20px;color:var(--text-muted);display:none;background:var(--card-bg);border-radius:12px}
+.speak-btn{border:1px solid #dbeafe;background:#eff6ff;color:#1d4ed8;border-radius:999px;padding:3px 8px;font-size:.8rem;cursor:pointer;margin-left:6px;white-space:nowrap} .speak-btn.speaking{background:#2563eb;color:#fff}
+.modal-overlay{position:fixed;inset:0;background:rgba(15,23,42,.55);display:none;align-items:center;justify-content:center;z-index:100;padding:16px} .modal-overlay.open{display:flex}
+.modal{background:#fff;max-width:560px;width:100%;border-radius:16px;overflow:hidden;max-height:88vh;overflow-y:auto} .modal-head{padding:18px 20px 12px;background:#eff6ff;border-bottom:1px solid #dbeafe;display:flex;justify-content:space-between} .modal-close{border:0;background:#fff;width:32px;height:32px;border-radius:999px;cursor:pointer;font-size:18px}
+.modal-body{padding:16px 20px 20px} .ex-card{background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px;margin-bottom:10px;position:relative} .ex-card b{padding-right:42px;display:block;color:#1d4ed8} .ex-card span{display:block;color:#475569;font-size:.9rem;margin-top:3px} .ex-card .speak-btn{position:absolute;top:10px;right:10px} .ex-tag{display:inline-block;font-size:.75rem;background:#dbeafe;color:#1e40af;padding:2px 8px;border-radius:999px;margin-bottom:6px;font-weight:600}
+.voice-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap} .voice-bar select{padding:6px 8px;border:1px solid #e2e8f0;border-radius:8px} .hint{text-align:center;color:var(--text-muted);font-size:.85rem;margin:-6px 0 18px}
+@media(max-width:640px){body{padding:12px} th,td{padding:10px 12px;font-size:.88rem} .controls{flex-direction:column;align-items:stretch} .search-box{max-width:100%}}
+</style></head><body>
+<div class="container">
+<header><h1>《我的第一本韓語文法》文法總表</h1><p>初級（TOPIK 1）→ 中級（TOPIK 2）→ 中高級（TOPIK 3-4）→ 高級（TOPIK 5-6 預備）｜共 152 條核心文法</p><p style="font-size:.85rem;margin-top:6px">按書嘅次序排：初級打基礎 → 中級加推測・連接・引述 → 高級加文章語・讓步・條件等，高級為《我的第一本韓語中高級文法》延伸</p></header>
+<div class="controls"><div class="filter-buttons"><button class="filter-btn active" data-filter="all">全部顯示 (152條)</button><button class="filter-btn" data-filter="topik1">初級・TOPIK 1 (30條)</button><button class="filter-btn" data-filter="topik2">中級・TOPIK 2 (32條)</button><button class="filter-btn" data-filter="topik3">中高級・TOPIK 3 (35條)</button><button class="filter-btn" data-filter="topik4">中高級・TOPIK 4 (35條)</button><button class="filter-btn" data-filter="gogup">高級・TOPIK 3 橋接 (20條)</button></div><div class="voice-bar"><label>🔊 發音：<select id="voiceRate"><option value="0.85">慢速 0.85x</option><option value="1" selected>正常 1x</option><option value="1.25">快速 1.25x</option></select></label><label><input type="checkbox" id="autoSpeak" checked> 點文法自動讀第一句</label></div><div class="search-box"><input type="text" id="searchInput" placeholder="搜尋文法、韓文句型或中文意思..."></div></div>
+<div class="no-results" id="noResults">找不到符合關鍵字的文法項目，請嘗試其他搜尋字詞。</div>
+
+<div class="section-card" data-category="topik1"><div class="section-header"><h2>初級（TOPIK 1・基礎）</h2><span class="badge">初級・TOPIK I・1級</span></div><div class="table-wrapper"><table><thead><tr><th>編號</th><th>核心文法與句型重點</th><th>常見例子 / 中文意思</th></tr></thead><tbody>
+        <tr><td class="lesson-col">初級 1</td><td class="topic-col">主格 / 主題助詞：은/는・이/가</td><td class="example-col">저는 학생이에요. / 책이 있어요.<span style="display:block;color:#64748b;font-size:.85rem">我是學生。/ 有書。</span></td></tr>
+        <tr><td class="lesson-col">初級 2</td><td class="topic-col">受格助詞：을/를</td><td class="example-col">밥을 먹어요.<span style="display:block;color:#64748b;font-size:.85rem">吃飯。</span></td></tr>
+        <tr><td class="lesson-col">初級 3</td><td class="topic-col">場所・時間助詞：에 / 에서</td><td class="example-col">학교에 가요. / 집에서 공부해요.<span style="display:block;color:#64748b;font-size:.85rem">去學校。/ 在家讀書。</span></td></tr>
+        <tr><td class="lesson-col">初級 4</td><td class="topic-col">並列：와/과・하고・(이)랑</td><td class="example-col">친구하고 영화를 봐요.<span style="display:block;color:#64748b;font-size:.85rem">和朋友看電影。</span></td></tr>
+        <tr><td class="lesson-col">初級 5</td><td class="topic-col">判斷句：이에요/예요・입니다</td><td class="example-col">이것은 책이에요.<span style="display:block;color:#64748b;font-size:.85rem">這是書。</span></td></tr>
+        <tr><td class="lesson-col">初級 6</td><td class="topic-col">否定：아니에요 / 안・-지 않다</td><td class="example-col">학생이 아니에요. / 안 먹어요.<span style="display:block;color:#64748b;font-size:.85rem">不是學生。/ 不吃。</span></td></tr>
+        <tr><td class="lesson-col">初級 7</td><td class="topic-col">現在式：-아/어/여요</td><td class="example-col">밥을 먹어요.<span style="display:block;color:#64748b;font-size:.85rem">吃飯。</span></td></tr>
+        <tr><td class="lesson-col">初級 8</td><td class="topic-col">過去式：-았/었/였어요</td><td class="example-col">어제 영화를 봤어요.<span style="display:block;color:#64748b;font-size:.85rem">昨天看了電影。</span></td></tr>
+        <tr><td class="lesson-col">初級 9</td><td class="topic-col">未來・推測：-(으)ㄹ 거예요</td><td class="example-col">내일 비가 올 거예요.<span style="display:block;color:#64748b;font-size:.85rem">明天會下雨。</span></td></tr>
+        <tr><td class="lesson-col">初級 10</td><td class="topic-col">願望：-고 싶어요</td><td class="example-col">한국에 가고 싶어요.<span style="display:block;color:#64748b;font-size:.85rem">想去韓國。</span></td></tr>
+        <tr><td class="lesson-col">初級 11</td><td class="topic-col">提議・詢問：-(으)ㄹ까요?</td><td class="example-col">같이 먹을까요?<span style="display:block;color:#64748b;font-size:.85rem">一起吃嗎？</span></td></tr>
+        <tr><td class="lesson-col">初級 12</td><td class="topic-col">不能：못 / -지 못하다</td><td class="example-col">어제 못 잤어요.<span style="display:block;color:#64748b;font-size:.85rem">昨天沒睡好。</span></td></tr>
+        <tr><td class="lesson-col">初級 13</td><td class="topic-col">並列連接：-고</td><td class="example-col">밥을 먹고 공부해요.<span style="display:block;color:#64748b;font-size:.85rem">吃完飯讀書。</span></td></tr>
+        <tr><td class="lesson-col">初級 14</td><td class="topic-col">原因・順序：-아/어서</td><td class="example-col">바빠서 못 가요.<span style="display:block;color:#64748b;font-size:.85rem">因為忙去不了。</span></td></tr>
+        <tr><td class="lesson-col">初級 15</td><td class="topic-col">轉折：-지만</td><td class="example-col">비싸지만 샀어요.<span style="display:block;color:#64748b;font-size:.85rem">雖然貴但買了。</span></td></tr>
+        <tr><td class="lesson-col">初級 16</td><td class="topic-col">選擇：-거나</td><td class="example-col">커피나 차를 마셔요.<span style="display:block;color:#64748b;font-size:.85rem">喝咖啡或茶。</span></td></tr>
+        <tr><td class="lesson-col">初級 17</td><td class="topic-col">條件：-(으)면</td><td class="example-col">시간이 있으면 가요.<span style="display:block;color:#64748b;font-size:.85rem">如果有時間就去。</span></td></tr>
+        <tr><td class="lesson-col">初級 18</td><td class="topic-col">請求：-아/어 주세요</td><td class="example-col">조금 기다려 주세요.<span style="display:block;color:#64748b;font-size:.85rem">請等一下。</span></td></tr>
+        <tr><td class="lesson-col">初級 19</td><td class="topic-col">許可：-아/어도 돼요?</td><td class="example-col">여기에 앉아도 돼요?<span style="display:block;color:#64748b;font-size:.85rem">可以在這裡坐嗎？</span></td></tr>
+        <tr><td class="lesson-col">初級 20</td><td class="topic-col">義務：-아야/어야 돼요</td><td class="example-col">숙제를 해야 돼요.<span style="display:block;color:#64748b;font-size:.85rem">必須做功課。</span></td></tr>
+        <tr><td class="lesson-col">初級 21</td><td class="topic-col">尊敬：-(으)세요 / -(으)십시오</td><td class="example-col">어서 오세요.<span style="display:block;color:#64748b;font-size:.85rem">歡迎光臨。</span></td></tr>
+        <tr><td class="lesson-col">初級 22</td><td class="topic-col">進行・狀態：-고 있다</td><td class="example-col">지금 공부하고 있어요.<span style="display:block;color:#64748b;font-size:.85rem">正在讀書。</span></td></tr>
+        <tr><td class="lesson-col">初級 23</td><td class="topic-col">修飾名詞：-(으)ㄴ / -는 / -(으)ㄹ</td><td class="example-col">어제 본 영화 / 읽는 책 / 먹을 것<span style="display:block;color:#64748b;font-size:.85rem">昨天看的電影 / 正在看的書 / 要吃的東西</span></td></tr>
+        <tr><td class="lesson-col">初級 24</td><td class="topic-col">比較：-보다 / -에서 -까지</td><td class="example-col">어제보다 오늘은 추워요.<span style="display:block;color:#64748b;font-size:.85rem">比起昨天，今天更冷。</span></td></tr>
+        <tr><td class="lesson-col">初級 25</td><td class="topic-col">起點・也・只：-부터 / -도 / -만</td><td class="example-col">아침부터 공부해요. / 저도 가요. / 물만 마셔요.<span style="display:block;color:#64748b;font-size:.85rem">從早上開始讀書。/ 我也去。/ 只喝水。</span></td></tr>
+        <tr><td class="lesson-col">初級 26</td><td class="topic-col">可能：-(으)ㄹ 수 있다/없다</td><td class="example-col">한국어를 말할 수 있어요.<span style="display:block;color:#64748b;font-size:.85rem">會說韓文。</span></td></tr>
+        <tr><td class="lesson-col">初級 27</td><td class="topic-col">嘗試：-아/어 보다</td><td class="example-col">김치를 먹어 봤어요.<span style="display:block;color:#64748b;font-size:.85rem">試吃過泡菜。</span></td></tr>
+        <tr><td class="lesson-col">初級 28</td><td class="topic-col">原因：-기 때문에 / -(으)니까</td><td class="example-col">아파서 학교에 못 갔어요.<span style="display:block;color:#64748b;font-size:.85rem">因為生病沒去學校。</span></td></tr>
+        <tr><td class="lesson-col">初級 29</td><td class="topic-col">連接副詞：그리고・그래서・그러나</td><td class="example-col">비가 와요. 그래서 우산을 샀어요.<span style="display:block;color:#64748b;font-size:.85rem">下雨了。所以買了傘。</span></td></tr>
+        <tr><td class="lesson-col">初級 30</td><td class="topic-col">疑問詞＋助詞：누구 / 어디 / 언제 / 왜</td><td class="example-col">어디에 가요? / 왜 안 왔어요?<span style="display:block;color:#64748b;font-size:.85rem">去哪裡？/ 為什麼沒來？</span></td></tr>
+</tbody></table></div></div>
+
+<div class="section-card" data-category="topik2"><div class="section-header"><h2>中級（TOPIK 2・初級進階）</h2><span class="badge badge-n2">中級・TOPIK I・2級</span></div><div class="table-wrapper"><table><thead><tr><th>編號</th><th>核心文法與句型重點</th><th>常見例子 / 中文意思</th></tr></thead><tbody>
+        <tr><td class="lesson-col">中級 1</td><td class="topic-col">背景說明：-(으)ㄴ/는데</td><td class="example-col">날씨가 좋은데 산책할까요?<span style="display:block;color:#64748b;font-size:.85rem">天氣這麼好，要不要散步？</span></td></tr>
+        <tr><td class="lesson-col">中級 2</td><td class="topic-col">原因：-(으)니까 / -기 때문에</td><td class="example-col">추우니까 옷을 입어요.<span style="display:block;color:#64748b;font-size:.85rem">因為冷所以穿衣服。</span></td></tr>
+        <tr><td class="lesson-col">中級 3</td><td class="topic-col">條件・假設：-(으)면 / -거든</td><td class="example-col">오면 전화해 주세요.<span style="display:block;color:#64748b;font-size:.85rem">如果來請打電話給我。</span></td></tr>
+        <tr><td class="lesson-col">中級 4</td><td class="topic-col">推測：-(으)ㄴ/는 것 같다</td><td class="example-col">비가 오는 것 같아요.<span style="display:block;color:#64748b;font-size:.85rem">好像在下雨。</span></td></tr>
+        <tr><td class="lesson-col">中級 5</td><td class="topic-col">推測・打算：-(으)ㄹ 것 같다</td><td class="example-col">내일 올 것 같아요.<span style="display:block;color:#64748b;font-size:.85rem">好像明天會來。</span></td></tr>
+        <tr><td class="lesson-col">中級 6</td><td class="topic-col">可能推測：-(으)ㄹ지도 모르다</td><td class="example-col">모를지도 몰라요.<span style="display:block;color:#64748b;font-size:.85rem">可能不知道。</span></td></tr>
+        <tr><td class="lesson-col">中級 7</td><td class="topic-col">推測（證據）：-나 보다</td><td class="example-col">피곤해 보이나 봐요.<span style="display:block;color:#64748b;font-size:.85rem">看起來好像很累。</span></td></tr>
+        <tr><td class="lesson-col">中級 8</td><td class="topic-col">提議：-는 게 어때요? / -(으)ㄹ까요?</td><td class="example-col">같이 가는 게 어때요?<span style="display:block;color:#64748b;font-size:.85rem">一起去怎麼樣？</span></td></tr>
+        <tr><td class="lesson-col">中級 9</td><td class="topic-col">同時進行：-(으)면서</td><td class="example-col">음악을 들으면서 공부해요.<span style="display:block;color:#64748b;font-size:.85rem">一邊聽音樂一邊讀書。</span></td></tr>
+        <tr><td class="lesson-col">中級 10</td><td class="topic-col">一〜就〜：-자마자</td><td class="example-col">집에 오자마자 잤어요.<span style="display:block;color:#64748b;font-size:.85rem">一回到家就睡了。</span></td></tr>
+        <tr><td class="lesson-col">中級 11</td><td class="topic-col">中途轉換：-다가</td><td class="example-col">공부하다가 잤어요.<span style="display:block;color:#64748b;font-size:.85rem">讀書讀到一半睡著了。</span></td></tr>
+        <tr><td class="lesson-col">中級 12</td><td class="topic-col">之前・之後：-기 전에 / -(으)ㄴ 후에</td><td class="example-col">자기 전에 씻어요.<span style="display:block;color:#64748b;font-size:.85rem">睡覺前洗臉。</span></td></tr>
+        <tr><td class="lesson-col">中級 13</td><td class="topic-col">完成後：-고 나서 / -아/어 가지고</td><td class="example-col">밥을 먹고 나서 출발했어요.<span style="display:block;color:#64748b;font-size:.85rem">吃完飯後出發了。</span></td></tr>
+        <tr><td class="lesson-col">中級 14</td><td class="topic-col">禁止・義務：-(으)면 안 되다 / -아야/어야 하다</td><td class="example-col">여기서 자면 안 돼요.<span style="display:block;color:#64748b;font-size:.85rem">不能在這裡睡。</span></td></tr>
+        <tr><td class="lesson-col">中級 15</td><td class="topic-col">必要：-(으)ㄹ 필요가 있다</td><td class="example-col">걱정할 필요가 없어요.<span style="display:block;color:#64748b;font-size:.85rem">沒必要擔心。</span></td></tr>
+        <tr><td class="lesson-col">中級 16</td><td class="topic-col">希望：-(으)면 좋겠다</td><td class="example-col">비가 안 오면 좋겠어요.<span style="display:block;color:#64748b;font-size:.85rem">希望不要下雨。</span></td></tr>
+        <tr><td class="lesson-col">中級 17</td><td class="topic-col">目的：-도록 / -기 위해서 / -(으)려고</td><td class="example-col">잘 들리도록 말해 주세요.<span style="display:block;color:#64748b;font-size:.85rem">請說得聽得清楚一點。</span></td></tr>
+        <tr><td class="lesson-col">中級 18</td><td class="topic-col">他人願望：-고 싶어 하다</td><td class="example-col">동생이 가고 싶어 해요.<span style="display:block;color:#64748b;font-size:.85rem">弟弟想去。</span></td></tr>
+        <tr><td class="lesson-col">中級 19</td><td class="topic-col">變化：-게 되다 / -게 하다</td><td class="example-col">한국어를 잘하게 됐어요.<span style="display:block;color:#64748b;font-size:.85rem">變得會說韓文了。</span></td></tr>
+        <tr><td class="lesson-col">中級 20</td><td class="topic-col">被動・變化：-아/어 지다</td><td class="example-col">날씨가 추워졌어요.<span style="display:block;color:#64748b;font-size:.85rem">天氣變冷了。</span></td></tr>
+        <tr><td class="lesson-col">中級 21</td><td class="topic-col">完了・遺憾：-아/어 버리다 / -고 말다</td><td class="example-col">지갑을 잃어버렸어요.<span style="display:block;color:#64748b;font-size:.85rem">把錢包弄丟了。</span></td></tr>
+        <tr><td class="lesson-col">中級 22</td><td class="topic-col">事先準備：-아/어 놓다 / -아/어 두다</td><td class="example-col">문을 열어 두었어요.<span style="display:block;color:#64748b;font-size:.85rem">把門開著。</span></td></tr>
+        <tr><td class="lesson-col">中級 23</td><td class="topic-col">原因結果：-는 바람에 / -(으)ㄴ 덕분에</td><td class="example-col">늦게 일어난 바람에 지각했어요.<span style="display:block;color:#64748b;font-size:.85rem">因為起晚了所以遲到了。</span></td></tr>
+        <tr><td class="lesson-col">中級 24</td><td class="topic-col">不僅…而且：-(으)ㄹ 뿐만 아니라</td><td class="example-col">싸뿐만 아니라 맛있어요.<span style="display:block;color:#64748b;font-size:.85rem">不僅便宜而且好吃。</span></td></tr>
+        <tr><td class="lesson-col">中級 25</td><td class="topic-col">無論…都：-든지 / -(으)나 / -아/어도</td><td class="example-col">비가 와도 갈 거예요.<span style="display:block;color:#64748b;font-size:.85rem">即使下雨也要去。</span></td></tr>
+        <tr><td class="lesson-col">中級 26</td><td class="topic-col">越…越…：-(으)면 -(으)ㄹ수록</td><td class="example-col">공부하면 할수록 어려워요.<span style="display:block;color:#64748b;font-size:.85rem">越學越難。</span></td></tr>
+        <tr><td class="lesson-col">中級 27</td><td class="topic-col">期間・經過：-는 동안 / -(으)ㄴ 지</td><td class="example-col">한국에 온 지 1년이 됐어요.<span style="display:block;color:#64748b;font-size:.85rem">來韓國已經一年了。</span></td></tr>
+        <tr><td class="lesson-col">中級 28</td><td class="topic-col">比喻・程度：-처럼 / -만큼 / -같이</td><td class="example-col">눈처럼 하얘요.<span style="display:block;color:#64748b;font-size:.85rem">像雪一樣白。</span></td></tr>
+        <tr><td class="lesson-col">中級 29</td><td class="topic-col">比較・最高：-보다 더 / 제일・가장</td><td class="example-col">이것이 제일 좋아요.<span style="display:block;color:#64748b;font-size:.85rem">這個最好。</span></td></tr>
+        <tr><td class="lesson-col">中級 30</td><td class="topic-col">間接引述：-(이)라고 / -다고 하다</td><td class="example-col">친구가 온다고 했어요.<span style="display:block;color:#64748b;font-size:.85rem">朋友說他會來。</span></td></tr>
+        <tr><td class="lesson-col">中級 31</td><td class="topic-col">間接命令・提議：-(으)라고 / -자고 하다</td><td class="example-col">선생님이 조용히 하라고 했어요.<span style="display:block;color:#64748b;font-size:.85rem">老師說要安靜。</span></td></tr>
+        <tr><td class="lesson-col">中級 32</td><td class="topic-col">是否：-(으)ㄴ/는지 / -(으)ㄹ지</td><td class="example-col">갈지 안 갈지 몰라요.<span style="display:block;color:#64748b;font-size:.85rem">不知道去不去。</span></td></tr>
+</tbody></table></div></div>
+
+
+<div class="section-card" data-category="topik3"><div class="section-header"><h2>TOPIK 3（中級・Intermediate）</h2><span class="badge">TOPIK II・3級</span></div><div class="table-wrapper"><table><thead><tr><th>編號</th><th>核心文法與句型重點</th><th>常見例子 / 中文意思</th></tr></thead><tbody>
+        <tr><td class="lesson-col">TOPIK 3 1</td><td class="topic-col">讓步轉折：-는데도 / -(으)ㄴ/는데도</td><td class="example-col">비싼데도 샀어요.<span style="display:block;color:#64748b;font-size:.85rem">雖然貴但還是買了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 2</td><td class="topic-col">假設讓步：-더라도</td><td class="example-col">비가 오더라도 갈 거예요.<span style="display:block;color:#64748b;font-size:.85rem">即使下雨也要去。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 3</td><td class="topic-col">條件假設：-(으)ㄹ지언정 / -(으)면 -(으)ㄹ수록</td><td class="example-col">힘들지언정 포기하지 않을 거예요.<span style="display:block;color:#64748b;font-size:.85rem">即使辛苦也不會放棄。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 4</td><td class="topic-col">推測回想：-던 / -(으)ㄴ/던</td><td class="example-col">어렸을 때 먹던 음식이에요.<span style="display:block;color:#64748b;font-size:.85rem">是小時候吃的食物。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 5</td><td class="topic-col">習慣回想：-곤 했다</td><td class="example-col">주말마다 등산하곤 했어요.<span style="display:block;color:#64748b;font-size:.85rem">以前每個週末都去爬山。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 6</td><td class="topic-col">傳聞推測：-(이)라고 한다 / -다고 한다</td><td class="example-col">내일 온다고 해요.<span style="display:block;color:#64748b;font-size:.85rem">聽說明天會來。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 7</td><td class="topic-col">間接疑問：-(으)ㄴ/는지 / -(으)ㄹ지</td><td class="example-col">언제 올지 몰라요.<span style="display:block;color:#64748b;font-size:.85rem">不知道什麼時候來。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 8</td><td class="topic-col">目的原因：-기 위해서 / -(으)려고 / -도록</td><td class="example-col">건강을 위해서 운동해요.<span style="display:block;color:#64748b;font-size:.85rem">為了健康而運動。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 9</td><td class="topic-col">程度：-(으)ㄹ 정도로 / -(으)ㄹ 만큼</td><td class="example-col">울 정도로 슬펐어요.<span style="display:block;color:#64748b;font-size:.85rem">難過到哭的程度。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 10</td><td class="topic-col">比較選擇：-보다 / -(으)ㄴ/는 게 낫다</td><td class="example-col">이것이 더 낫겠어요.<span style="display:block;color:#64748b;font-size:.85rem">這個比較好。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 11</td><td class="topic-col">變化結果：-아/어 지다 / -게 되다</td><td class="example-col">날씨가 추워졌어요.<span style="display:block;color:#64748b;font-size:.85rem">天氣變冷了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 12</td><td class="topic-col">使役被動：-게 하다 / -아/어 지다</td><td class="example-col">아이를 웃게 했어요.<span style="display:block;color:#64748b;font-size:.85rem">讓孩子笑了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 13</td><td class="topic-col">持續狀態：-아/어 있다 / -고 있다</td><td class="example-col">문이 열려 있어요.<span style="display:block;color:#64748b;font-size:.85rem">門開著。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 14</td><td class="topic-col">完成準備：-아/어 놓다 / -아/어 두다</td><td class="example-col">준비해 두었어요.<span style="display:block;color:#64748b;font-size:.85rem">已經準備好了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 15</td><td class="topic-col">嘗試經驗：-아/어 보다 / -본 적이 있다</td><td class="example-col">먹어 본 적이 있어요.<span style="display:block;color:#64748b;font-size:.85rem">有試吃過。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 16</td><td class="topic-col">義務必要：-아야/어야 하다 / -(으)ㄹ 필요가 있다</td><td class="example-col">꼭 가야 해요.<span style="display:block;color:#64748b;font-size:.85rem">一定要去。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 17</td><td class="topic-col">禁止許可：-(으)면 안 되다 / -아/어도 되다</td><td class="example-col">들어가면 안 돼요.<span style="display:block;color:#64748b;font-size:.85rem">不能進去。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 18</td><td class="topic-col">推測確信：-(으)ㄹ 것이다 / -(으)ㄹ 게 분명하다</td><td class="example-col">올 것이 분명해요.<span style="display:block;color:#64748b;font-size:.85rem">一定會來。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 19</td><td class="topic-col">推測證據：-아/어 보이다 / -게 보이다</td><td class="example-col">피곤해 보여요.<span style="display:block;color:#64748b;font-size:.85rem">看起來很累。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 20</td><td class="topic-col">原因結果：-는 바람에 / -(으)ㄴ 탓에 / -(으)ㄴ 덕분에</td><td class="example-col">늦게 일어난 탓에 지각했어요.<span style="display:block;color:#64748b;font-size:.85rem">因為起晚了遲到了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 21</td><td class="topic-col">同時背景：-(으)면서 / -다가 / -자마자</td><td class="example-col">전화하면서 걸었어요.<span style="display:block;color:#64748b;font-size:.85rem">一邊打電話一邊走。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 22</td><td class="topic-col">順序：-고 나서 / -(으)ㄴ 후에 / -기 전에</td><td class="example-col">밥 먹고 나서 가요.<span style="display:block;color:#64748b;font-size:.85rem">吃完飯後去。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 23</td><td class="topic-col">引用命令提議：-(으)라고 / -자고 / -(으)ㄴ/는다고</td><td class="example-col">조용히 하라고 했어요.<span style="display:block;color:#64748b;font-size:.85rem">說要安靜。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 24</td><td class="topic-col">列舉補充：-(이)나 / -거나 / -든지</td><td class="example-col">커피나 차를 주세요.<span style="display:block;color:#64748b;font-size:.85rem">請給咖啡或茶。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 25</td><td class="topic-col">限定強調：-밖에 / -만 / -(이)야말로</td><td class="example-col">이것밖에 없어요.<span style="display:block;color:#64748b;font-size:.85rem">只有這個。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 26</td><td class="topic-col">比較最：-제일 / 가장 / -보다 더</td><td class="example-col">이것이 제일 좋아요.<span style="display:block;color:#64748b;font-size:.85rem">這個最好。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 27</td><td class="topic-col">比喻：-처럼 / -같이 / -만큼</td><td class="example-col">꽃처럼 예뻐요.<span style="display:block;color:#64748b;font-size:.85rem">像花一樣漂亮。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 28</td><td class="topic-col">條件：-(으)면 / -거든 / -아야</td><td class="example-col">시간이 있으면 와요.<span style="display:block;color:#64748b;font-size:.85rem">如果有時間就來。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 29</td><td class="topic-col">意圖：-(으)려고 하다 / -고 싶어 하다</td><td class="example-col">한국에 가려고 해요.<span style="display:block;color:#64748b;font-size:.85rem">打算去韓國。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 30</td><td class="topic-col">後悔遺憾：-아/어 버리다 / -고 말다</td><td class="example-col">잃어버렸어요.<span style="display:block;color:#64748b;font-size:.85rem">弄丟了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 31</td><td class="topic-col">習慣傾向：-는 편이다 / -기 십상이다</td><td class="example-col">일찍 자는 편이에요.<span style="display:block;color:#64748b;font-size:.85rem">算是比較早睡的。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 32</td><td class="topic-col">文章連接：-그런데 / -하지만 / -그래서</td><td class="example-col">비가 와요. 그런데 우산이 없어요.<span style="display:block;color:#64748b;font-size:.85rem">下雨了。可是沒有傘。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 33</td><td class="topic-col">時間經過：-(으)ㄴ 지 / -는 동안</td><td class="example-col">온 지 1년이 됐어요.<span style="display:block;color:#64748b;font-size:.85rem">來了已經一年了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 34</td><td class="topic-col">假定：-다면 / -(이)라면</td><td class="example-col">돈이 많다면 여행할 거예요.<span style="display:block;color:#64748b;font-size:.85rem">如果有很多錢就會去旅行。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 3 35</td><td class="topic-col">建議：-는 게 어때요? / -(으)ㄹ까요?</td><td class="example-col">같이 가는 게 어때요?<span style="display:block;color:#64748b;font-size:.85rem">一起去怎麼樣？</span></td></tr>
+</tbody></table></div></div>
+
+<div class="section-card" data-category="topik4"><div class="section-header"><h2>TOPIK 4（中高級・Intermediate＋文章語）</h2><span class="badge">TOPIK II・4級</span></div><div class="table-wrapper"><table><thead><tr><th>編號</th><th>核心文法與句型重點</th><th>常見例子 / 中文意思</th></tr></thead><tbody>
+        <tr><td class="lesson-col">TOPIK 4 1</td><td class="topic-col">文章語讓步：-음에도 불구하고 / -(으)ㅁ에도</td><td class="example-col">노력했음에도 불구하고 실패했어요.<span style="display:block;color:#64748b;font-size:.85rem">儘管努力了還是失敗了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 2</td><td class="topic-col">正式原因：-으로 인해 / -으로 말미암아</td><td class="example-col">사고로 인해 늦었어요.<span style="display:block;color:#64748b;font-size:.85rem">因事故而遲到了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 3</td><td class="topic-col">正式推測：-(으)ㄹ 것으로 보이다 / -(으)ㄹ 것으로 예상되다</td><td class="example-col">증가할 것으로 보입니다.<span style="display:block;color:#64748b;font-size:.85rem">預計會增加。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 4</td><td class="topic-col">正式引用：-에 따르면 / -에 의하면</td><td class="example-col">신문에 따르면 내일 비가 온대요.<span style="display:block;color:#64748b;font-size:.85rem">據報紙說，明天會下雨。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 5</td><td class="topic-col">正式對比：-(으)ㄴ/는 반면 / -(으)ㄴ/는 반면에</td><td class="example-col">값이 싼 반면 질이 떨어져요.<span style="display:block;color:#64748b;font-size:.85rem">價格便宜，但品質較差。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 6</td><td class="topic-col">正式條件：-(으)ㄹ 경우 / -(으)ㄴ/는 경우</td><td class="example-col">필요한 경우 연락해 주세요.<span style="display:block;color:#64748b;font-size:.85rem">有需要時請聯絡。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 7</td><td class="topic-col">正式目的：-을/를 위해 / -기 위하여</td><td class="example-col">건강을 위하여 운동합니다.<span style="display:block;color:#64748b;font-size:.85rem">為了健康而運動。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 8</td><td class="topic-col">正式手段：-(으)ㅁ으로써 / -을/를 통해</td><td class="example-col">노력을 통해 성공했어요.<span style="display:block;color:#64748b;font-size:.85rem">透過努力成功了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 9</td><td class="topic-col">正式轉換：-에 따라 / -에 따라서</td><td class="example-col">상황에 따라 달라져요.<span style="display:block;color:#64748b;font-size:.85rem">根據情況而不同。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 10</td><td class="topic-col">正式假設：-(이)라면 / -다면</td><td class="example-col">시간이 있다면 갈 거예요.<span style="display:block;color:#64748b;font-size:.85rem">如果有時間就會去。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 11</td><td class="topic-col">正式讓步：-더라도 / -아/어도</td><td class="example-col">어렵더라도 포기하지 않을 거예요.<span style="display:block;color:#64748b;font-size:.85rem">即使困難也不會放棄。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 12</td><td class="topic-col">正式否定推測：-(으)ㄹ 리가 없다 / -(으)ㄹ 리가 만무하다</td><td class="example-col">그럴 리가 없어요.<span style="display:block;color:#64748b;font-size:.85rem">不可能那樣。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 13</td><td class="topic-col">正式必然：-기 마련이다 / -게 마련이다</td><td class="example-col">실수하기 마련이에요.<span style="display:block;color:#64748b;font-size:.85rem">難免會出錯。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 14</td><td class="topic-col">正式傾向：-는 경향이 있다</td><td class="example-col">줄어드는 경향이 있어요.<span style="display:block;color:#64748b;font-size:.85rem">有減少的傾向。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 15</td><td class="topic-col">正式評價：-(으)ㄴ/는 것으로 평가되다</td><td class="example-col">좋은 것으로 평가됩니다.<span style="display:block;color:#64748b;font-size:.85rem">被評價為好的。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 16</td><td class="topic-col">間接引述進階：-다고들 하다 / -(이)라고들 하다</td><td class="example-col">맛있다고들 해요.<span style="display:block;color:#64748b;font-size:.85rem">大家都說好吃。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 17</td><td class="topic-col">強調對比：-은/는커녕 / -은/는 고사하고</td><td class="example-col">밥은커녕 물도 못 마셨어요.<span style="display:block;color:#64748b;font-size:.85rem">別說飯了，連水都沒喝。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 18</td><td class="topic-col">極端假設：-(으)ㄹ지언정 / -(으)ㄹ지라도</td><td class="example-col">죽을지언정 포기하지 않을 거예요.<span style="display:block;color:#64748b;font-size:.85rem">即使死也不會放棄。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 19</td><td class="topic-col">推測傳聞：-(으)ㄴ/는 듯하다 / -(으)ㄹ 듯하다</td><td class="example-col">비가 올 듯해요.<span style="display:block;color:#64748b;font-size:.85rem">好像要下雨了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 20</td><td class="topic-col">推測確信：-(으)ㄹ 게 틀림없다 / -(으)ㄹ 것이 분명하다</td><td class="example-col">올 것이 분명해요.<span style="display:block;color:#64748b;font-size:.85rem">一定會來。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 21</td><td class="topic-col">原因追究：-는 탓에 / -기 때문에 / -(으)ㄴ/는 바람에</td><td class="example-col">늦게 일어난 탓에 지각했어요.<span style="display:block;color:#64748b;font-size:.85rem">因為起晚了遲到了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 22</td><td class="topic-col">結果強調：-아/어서 / -는 바람에 / -다 보니</td><td class="example-col">공부하다 보니 밤이 됐어요.<span style="display:block;color:#64748b;font-size:.85rem">讀書讀著讀著就天黑了。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 23</td><td class="topic-col">習慣敘述：-곤 했다 / -던</td><td class="example-col">어렸을 때 자주 가던 곳이에요.<span style="display:block;color:#64748b;font-size:.85rem">是小時候常去的地方。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 24</td><td class="topic-col">時間限定：-(으)ㄴ/는 대로 / -자마자</td><td class="example-col">오는 대로 연락할게요.<span style="display:block;color:#64748b;font-size:.85rem">一來就聯絡你。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 25</td><td class="topic-col">同時進行進階：-(으)면서도 / -는 와중에</td><td class="example-col">알면서도 모른 척했어요.<span style="display:block;color:#64748b;font-size:.85rem">明明知道卻裝作不知道。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 26</td><td class="topic-col">選擇列舉：-(이)나 / -거나 / -든지 간에</td><td class="example-col">누구든지 간에 참여할 수 있어요.<span style="display:block;color:#64748b;font-size:.85rem">無論誰都可以參加。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 27</td><td class="topic-col">程度極限：-(으)ㄹ 정도로 / -(으)ㄹ 지경이다</td><td class="example-col">울 지경이었어요.<span style="display:block;color:#64748b;font-size:.85rem">到了要哭的地步。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 28</td><td class="topic-col">寫作連接：-따라서 / -그러므로 / -이에 따라</td><td class="example-col">따라서 이 문제는 중요합니다.<span style="display:block;color:#64748b;font-size:.85rem">因此，這個問題很重要。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 29</td><td class="topic-col">寫作對比：-반면에 / -이에 비해 / -와 달리</td><td class="example-col">이에 비해 이 제품은 싸요.<span style="display:block;color:#64748b;font-size:.85rem">相比之下，這個產品比較便宜。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 30</td><td class="topic-col">寫作舉例：-예를 들어 / -가령 / -이를테면</td><td class="example-col">예를 들어 이 경우를 보세요.<span style="display:block;color:#64748b;font-size:.85rem">例如，看看這個情況。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 31</td><td class="topic-col">寫作總結：-결론적으로 / -종합하면 / -요컨대</td><td class="example-col">결론적으로 이 방법이 좋습니다.<span style="display:block;color:#64748b;font-size:.85rem">總而言之，這個方法很好。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 32</td><td class="topic-col">寫作主張：-라고 생각한다 / -이라고 본다</td><td class="example-col">이렇게 생각합니다.<span style="display:block;color:#64748b;font-size:.85rem">我是這樣想的。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 33</td><td class="topic-col">寫作主張進階：-(으)ㅁ이 바람직하다 / -아야 한다</td><td class="example-col">개선함이 바람직합니다.<span style="display:block;color:#64748b;font-size:.85rem">改善是可取的。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 34</td><td class="topic-col">正式否定：-지 않다 / -지 않다고 할 수 없다</td><td class="example-col">무시할 수 없다고 할 수 없어요.<span style="display:block;color:#64748b;font-size:.85rem">不能說可以忽視。</span></td></tr>
+        <tr><td class="lesson-col">TOPIK 4 35</td><td class="topic-col">敬語文章語：-으시- / -입니다 / -습니다</td><td class="example-col">오셨습니다.<span style="display:block;color:#64748b;font-size:.85rem">您來了。</span></td></tr>
+</tbody></table></div></div>
+
+<div class="section-card" data-category="gogup"><div class="section-header"><h2>高級預備（TOPIK 5-6 入門・文章語＋進階連接）</h2><span class="badge" style="background:#fef3c7;color:#92400e">高級預備・TOPIK II 5-6級入門</span></div><div class="table-wrapper"><table><thead><tr><th>編號</th><th>核心文法與句型重點</th><th>常見例子 / 中文意思</th></tr></thead><tbody>
+        <tr><td class="lesson-col">高級 1</td><td class="topic-col">回想轉折：-더니</td><td class="example-col">만나더니 반갑다고 했어요.<span style="display:block;color:#64748b;font-size:.85rem">一見面就說很高興。</span></td></tr>
+        <tr><td class="lesson-col">高級 2</td><td class="topic-col">趁機會：-는 김에 / -는 길에</td><td class="example-col">나온 김에 장을 봐요.<span style="display:block;color:#64748b;font-size:.85rem">趁出來順便買菜。</span></td></tr>
+        <tr><td class="lesson-col">高級 3</td><td class="topic-col">只要…就…：-기만 하면</td><td class="example-col">연습하기만 하면 돼요.<span style="display:block;color:#64748b;font-size:.85rem">只要練習就好。</span></td></tr>
+        <tr><td class="lesson-col">高級 4</td><td class="topic-col">如果一直…：-다가는</td><td class="example-col">이러다가는 늦겠어요.<span style="display:block;color:#64748b;font-size:.85rem">再這樣下去會遲到。</span></td></tr>
+        <tr><td class="lesson-col">高級 5</td><td class="topic-col">只要…：-는 한</td><td class="example-col">노력하는 한 될 거예요.<span style="display:block;color:#64748b;font-size:.85rem">只要努力就會成功。</span></td></tr>
+        <tr><td class="lesson-col">高級 6</td><td class="topic-col">照…：-는 대로</td><td class="example-col">듣는 대로 적어요.<span style="display:block;color:#64748b;font-size:.85rem">照聽到的寫下來。</span></td></tr>
+        <tr><td class="lesson-col">高級 7</td><td class="topic-col">算是…：-(으)ㄴ 셈이다</td><td class="example-col">다 한 셈이에요.<span style="display:block;color:#64748b;font-size:.85rem">算是都做完了。</span></td></tr>
+        <tr><td class="lesson-col">高級 8</td><td class="topic-col">只是…：-(으)ㄹ 뿐이다</td><td class="example-col">보고 싶을 뿐이에요.<span style="display:block;color:#64748b;font-size:.85rem">只是想見你而已。</span></td></tr>
+        <tr><td class="lesson-col">高級 9</td><td class="topic-col">竟然…：-다니</td><td class="example-col">벌써 다 했다니 대단해요.<span style="display:block;color:#64748b;font-size:.85rem">竟然這麼快就做完了，真厲害。</span></td></tr>
+        <tr><td class="lesson-col">高級 10</td><td class="topic-col">因為…：-는 통에 / -는 바람에</td><td class="example-col">늦잠 자는 통에 지각했어요.<span style="display:block;color:#64748b;font-size:.85rem">因為睡過頭遲到了。</span></td></tr>
+        <tr><td class="lesson-col">高級 11</td><td class="topic-col">動不動就…：-기 십상이다</td><td class="example-col">넘어지기 십상이에요.<span style="display:block;color:#64748b;font-size:.85rem">動不動就跌倒。</span></td></tr>
+        <tr><td class="lesson-col">高級 12</td><td class="topic-col">如果…就…：-아/어서는</td><td class="example-col">서두르서는 안 돼요.<span style="display:block;color:#64748b;font-size:.85rem">不能這樣匆忙。</span></td></tr>
+        <tr><td class="lesson-col">高級 13</td><td class="topic-col">算是…一類：-는 편이다</td><td class="example-col">조용한 편이에요.<span style="display:block;color:#64748b;font-size:.85rem">算是比較安靜的。</span></td></tr>
+        <tr><td class="lesson-col">高級 14</td><td class="topic-col">不可能…：-(으)ㄹ 리가 없다</td><td class="example-col">그럴 리가 없어요.<span style="display:block;color:#64748b;font-size:.85rem">不可能那樣。</span></td></tr>
+        <tr><td class="lesson-col">高級 15</td><td class="topic-col">有的…有的…：-는가 하면</td><td class="example-col">웃는가 하면 우는 아이예요.<span style="display:block;color:#64748b;font-size:.85rem">一會笑一會哭的孩子。</span></td></tr>
+        <tr><td class="lesson-col">高級 16</td><td class="topic-col">理所當然：-기 마련이다</td><td class="example-col">실수하기 마련이에요.<span style="display:block;color:#64748b;font-size:.85rem">難免會出錯。</span></td></tr>
+        <tr><td class="lesson-col">高級 17</td><td class="topic-col">應該…吧：-아/어야지</td><td class="example-col">이제 가야지.<span style="display:block;color:#64748b;font-size:.85rem">現在該走了吧。</span></td></tr>
+        <tr><td class="lesson-col">高級 18</td><td class="topic-col">還不如…：-(으)ㄴ/는 게 낫다</td><td class="example-col">쉬는 게 낫겠어요.<span style="display:block;color:#64748b;font-size:.85rem">休息比較好。</span></td></tr>
+        <tr><td class="lesson-col">高級 19</td><td class="topic-col">文章語推測：-(으)ㄹ 것으로 보이다</td><td class="example-col">증가할 것으로 보입니다.<span style="display:block;color:#64748b;font-size:.85rem">預計會增加。</span></td></tr>
+        <tr><td class="lesson-col">高級 20</td><td class="topic-col">讓步・對比：-(으)ㄴ/는 반면</td><td class="example-col">값이 싼 반면 질이 떨어져요.<span style="display:block;color:#64748b;font-size:.85rem">價格便宜，但品質較差。</span></td></tr>
+</tbody></table></div></div>
+<p class="hint">💡 點任何一條，就會彈出例句卡片＋韓文朗讀</p>
+</div>
+<div class="modal-overlay" id="modalOverlay"><div class="modal"><div class="modal-head"><div><h3 id="modalTitle"></h3><p id="modalSub"></p></div><button class="modal-close" id="modalClose">×</button></div><div class="modal-body" id="modalBody"></div></div></div>
+<script>
+function getRate(){const s=document.getElementById('voiceRate');return s?parseFloat(s.value):1;}
+function speakKorean(text,btn){if(!('speechSynthesis' in window)){alert('呢個瀏覽器唔支援朗讀，請用 Chrome / Edge / Safari。');return;} window.speechSynthesis.cancel(); document.querySelectorAll('.speak-btn.speaking').forEach(b=>b.classList.remove('speaking')); const u=new SpeechSynthesisUtterance(text); u.lang='ko-KR'; u.rate=getRate(); const vs=window.speechSynthesis.getVoices(); const jp=vs.find(v=>v.lang&&v.lang.toLowerCase().startsWith('ko')); if(jp) u.voice=jp; if(btn) btn.classList.add('speaking'); u.onend=()=>{if(btn) btn.classList.remove('speaking');}; u.onerror=()=>{if(btn) btn.classList.remove('speaking');}; window.speechSynthesis.speak(u);}
+const EXAMPLES = {
+  "初級 1": [["저는 학생이에요.", "我是學生。/ 有書。"]],
+  "初級 2": [["밥을 먹어요.", "吃飯。"]],
+  "初級 3": [["학교에 가요.", "去學校。/ 在家讀書。"]],
+  "初級 4": [["친구하고 영화를 봐요.", "和朋友看電影。"]],
+  "初級 5": [["이것은 책이에요.", "這是書。"]],
+  "初級 6": [["학생이 아니에요.", "不是學生。/ 不吃。"]],
+  "初級 7": [["밥을 먹어요.", "吃飯。"]],
+  "初級 8": [["어제 영화를 봤어요.", "昨天看了電影。"]],
+  "初級 9": [["내일 비가 올 거예요.", "明天會下雨。"]],
+  "初級 10": [["한국에 가고 싶어요.", "想去韓國。"]],
+  "初級 11": [["같이 먹을까요?", "一起吃嗎？"]],
+  "初級 12": [["어제 못 잤어요.", "昨天沒睡好。"]],
+  "初級 13": [["밥을 먹고 공부해요.", "吃完飯讀書。"]],
+  "初級 14": [["바빠서 못 가요.", "因為忙去不了。"]],
+  "初級 15": [["비싸지만 샀어요.", "雖然貴但買了。"]],
+  "初級 16": [["커피나 차를 마셔요.", "喝咖啡或茶。"]],
+  "初級 17": [["시간이 있으면 가요.", "如果有時間就去。"]],
+  "初級 18": [["조금 기다려 주세요.", "請等一下。"]],
+  "初級 19": [["여기에 앉아도 돼요?", "可以在這裡坐嗎？"]],
+  "初級 20": [["숙제를 해야 돼요.", "必須做功課。"]],
+  "初級 21": [["어서 오세요.", "歡迎光臨。"]],
+  "初級 22": [["지금 공부하고 있어요.", "正在讀書。"]],
+  "初級 23": [["어제 본 영화", "昨天看的電影 / 正在看的書 / 要吃的東西"]],
+  "初級 24": [["어제보다 오늘은 추워요.", "比起昨天，今天更冷。"]],
+  "初級 25": [["아침부터 공부해요.", "從早上開始讀書。/ 我也去。/ 只喝水。"]],
+  "初級 26": [["한국어를 말할 수 있어요.", "會說韓文。"]],
+  "初級 27": [["김치를 먹어 봤어요.", "試吃過泡菜。"]],
+  "初級 28": [["아파서 학교에 못 갔어요.", "因為生病沒去學校。"]],
+  "初級 29": [["비가 와요. 그래서 우산을 샀어요.", "下雨了。所以買了傘。"]],
+  "初級 30": [["어디에 가요?", "去哪裡？/ 為什麼沒來？"]],
+  "中級 1": [["날씨가 좋은데 산책할까요?", "天氣這麼好，要不要散步？"]],
+  "中級 2": [["추우니까 옷을 입어요.", "因為冷所以穿衣服。"]],
+  "中級 3": [["오면 전화해 주세요.", "如果來請打電話給我。"]],
+  "中級 4": [["비가 오는 것 같아요.", "好像在下雨。"]],
+  "中級 5": [["내일 올 것 같아요.", "好像明天會來。"]],
+  "中級 6": [["모를지도 몰라요.", "可能不知道。"]],
+  "中級 7": [["피곤해 보이나 봐요.", "看起來好像很累。"]],
+  "中級 8": [["같이 가는 게 어때요?", "一起去怎麼樣？"]],
+  "中級 9": [["음악을 들으면서 공부해요.", "一邊聽音樂一邊讀書。"]],
+  "中級 10": [["집에 오자마자 잤어요.", "一回到家就睡了。"]],
+  "中級 11": [["공부하다가 잤어요.", "讀書讀到一半睡著了。"]],
+  "中級 12": [["자기 전에 씻어요.", "睡覺前洗臉。"]],
+  "中級 13": [["밥을 먹고 나서 출발했어요.", "吃完飯後出發了。"]],
+  "中級 14": [["여기서 자면 안 돼요.", "不能在這裡睡。"]],
+  "中級 15": [["걱정할 필요가 없어요.", "沒必要擔心。"]],
+  "中級 16": [["비가 안 오면 좋겠어요.", "希望不要下雨。"]],
+  "中級 17": [["잘 들리도록 말해 주세요.", "請說得聽得清楚一點。"]],
+  "中級 18": [["동생이 가고 싶어 해요.", "弟弟想去。"]],
+  "中級 19": [["한국어를 잘하게 됐어요.", "變得會說韓文了。"]],
+  "中級 20": [["날씨가 추워졌어요.", "天氣變冷了。"]],
+  "中級 21": [["지갑을 잃어버렸어요.", "把錢包弄丟了。"]],
+  "中級 22": [["문을 열어 두었어요.", "把門開著。"]],
+  "中級 23": [["늦게 일어난 바람에 지각했어요.", "因為起晚了所以遲到了。"]],
+  "中級 24": [["싸뿐만 아니라 맛있어요.", "不僅便宜而且好吃。"]],
+  "中級 25": [["비가 와도 갈 거예요.", "即使下雨也要去。"]],
+  "中級 26": [["공부하면 할수록 어려워요.", "越學越難。"]],
+  "中級 27": [["한국에 온 지 1년이 됐어요.", "來韓國已經一年了。"]],
+  "中級 28": [["눈처럼 하얘요.", "像雪一樣白。"]],
+  "中級 29": [["이것이 제일 좋아요.", "這個最好。"]],
+  "中級 30": [["친구가 온다고 했어요.", "朋友說他會來。"]],
+  "中級 31": [["선생님이 조용히 하라고 했어요.", "老師說要安靜。"]],
+  "中級 32": [["갈지 안 갈지 몰라요.", "不知道去不去。"]],
+  "高級 1": [["만나더니 반갑다고 했어요.", "一見面就說很高興。"]],
+  "高級 2": [["나온 김에 장을 봐요.", "趁出來順便買菜。"]],
+  "高級 3": [["연습하기만 하면 돼요.", "只要練習就好。"]],
+  "高級 4": [["이러다가는 늦겠어요.", "再這樣下去會遲到。"]],
+  "高級 5": [["노력하는 한 될 거예요.", "只要努力就會成功。"]],
+  "高級 6": [["듣는 대로 적어요.", "照聽到的寫下來。"]],
+  "高級 7": [["다 한 셈이에요.", "算是都做完了。"]],
+  "高級 8": [["보고 싶을 뿐이에요.", "只是想見你而已。"]],
+  "高級 9": [["벌써 다 했다니 대단해요.", "竟然這麼快就做完了，真厲害。"]],
+  "高級 10": [["늦잠 자는 통에 지각했어요.", "因為睡過頭遲到了。"]],
+  "高級 11": [["넘어지기 십상이에요.", "動不動就跌倒。"]],
+  "高級 12": [["서두르서는 안 돼요.", "不能這樣匆忙。"]],
+  "高級 13": [["조용한 편이에요.", "算是比較安靜的。"]],
+  "高級 14": [["그럴 리가 없어요.", "不可能那樣。"]],
+  "高級 15": [["웃는가 하면 우는 아이예요.", "一會笑一會哭的孩子。"]],
+  "高級 16": [["실수하기 마련이에요.", "難免會出錯。"]],
+  "高級 17": [["이제 가야지.", "現在該走了吧。"]],
+  "高級 18": [["쉬는 게 낫겠어요.", "休息比較好。"]],
+  "高級 19": [["증가할 것으로 보입니다.", "預計會增加。"]],
+  "高級 20": [["값이 싼 반면 질이 떨어져요.", "價格便宜，但品質較差。"]],
+  "TOPIK 3 1": [["비싼데도 샀어요.", "雖然貴但還是買了。"]],
+  "TOPIK 3 2": [["비가 오더라도 갈 거예요.", "即使下雨也要去。"]],
+  "TOPIK 3 3": [["힘들지언정 포기하지 않을 거예요.", "即使辛苦也不會放棄。"]],
+  "TOPIK 3 4": [["어렸을 때 먹던 음식이에요.", "是小時候吃的食物。"]],
+  "TOPIK 3 5": [["주말마다 등산하곤 했어요.", "以前每個週末都去爬山。"]],
+  "TOPIK 3 6": [["내일 온다고 해요.", "聽說明天會來。"]],
+  "TOPIK 3 7": [["언제 올지 몰라요.", "不知道什麼時候來。"]],
+  "TOPIK 3 8": [["건강을 위해서 운동해요.", "為了健康而運動。"]],
+  "TOPIK 3 9": [["울 정도로 슬펐어요.", "難過到哭的程度。"]],
+  "TOPIK 3 10": [["이것이 더 낫겠어요.", "這個比較好。"]],
+  "TOPIK 3 11": [["날씨가 추워졌어요.", "天氣變冷了。"]],
+  "TOPIK 3 12": [["아이를 웃게 했어요.", "讓孩子笑了。"]],
+  "TOPIK 3 13": [["문이 열려 있어요.", "門開著。"]],
+  "TOPIK 3 14": [["준비해 두었어요.", "已經準備好了。"]],
+  "TOPIK 3 15": [["먹어 본 적이 있어요.", "有試吃過。"]],
+  "TOPIK 3 16": [["꼭 가야 해요.", "一定要去。"]],
+  "TOPIK 3 17": [["들어가면 안 돼요.", "不能進去。"]],
+  "TOPIK 3 18": [["올 것이 분명해요.", "一定會來。"]],
+  "TOPIK 3 19": [["피곤해 보여요.", "看起來很累。"]],
+  "TOPIK 3 20": [["늦게 일어난 탓에 지각했어요.", "因為起晚了遲到了。"]],
+  "TOPIK 3 21": [["전화하면서 걸었어요.", "一邊打電話一邊走。"]],
+  "TOPIK 3 22": [["밥 먹고 나서 가요.", "吃完飯後去。"]],
+  "TOPIK 3 23": [["조용히 하라고 했어요.", "說要安靜。"]],
+  "TOPIK 3 24": [["커피나 차를 주세요.", "請給咖啡或茶。"]],
+  "TOPIK 3 25": [["이것밖에 없어요.", "只有這個。"]],
+  "TOPIK 3 26": [["이것이 제일 좋아요.", "這個最好。"]],
+  "TOPIK 3 27": [["꽃처럼 예뻐요.", "像花一樣漂亮。"]],
+  "TOPIK 3 28": [["시간이 있으면 와요.", "如果有時間就來。"]],
+  "TOPIK 3 29": [["한국에 가려고 해요.", "打算去韓國。"]],
+  "TOPIK 3 30": [["잃어버렸어요.", "弄丟了。"]],
+  "TOPIK 3 31": [["일찍 자는 편이에요.", "算是比較早睡的。"]],
+  "TOPIK 3 32": [["비가 와요. 그런데 우산이 없어요.", "下雨了。可是沒有傘。"]],
+  "TOPIK 3 33": [["온 지 1년이 됐어요.", "來了已經一年了。"]],
+  "TOPIK 3 34": [["돈이 많다면 여행할 거예요.", "如果有很多錢就會去旅行。"]],
+  "TOPIK 3 35": [["같이 가는 게 어때요?", "一起去怎麼樣？"]],
+  "TOPIK 4 1": [["노력했음에도 불구하고 실패했어요.", "儘管努力了還是失敗了。"]],
+  "TOPIK 4 2": [["사고로 인해 늦었어요.", "因事故而遲到了。"]],
+  "TOPIK 4 3": [["증가할 것으로 보입니다.", "預計會增加。"]],
+  "TOPIK 4 4": [["신문에 따르면 내일 비가 온대요.", "據報紙說，明天會下雨。"]],
+  "TOPIK 4 5": [["값이 싼 반면 질이 떨어져요.", "價格便宜，但品質較差。"]],
+  "TOPIK 4 6": [["필요한 경우 연락해 주세요.", "有需要時請聯絡。"]],
+  "TOPIK 4 7": [["건강을 위하여 운동합니다.", "為了健康而運動。"]],
+  "TOPIK 4 8": [["노력을 통해 성공했어요.", "透過努力成功了。"]],
+  "TOPIK 4 9": [["상황에 따라 달라져요.", "根據情況而不同。"]],
+  "TOPIK 4 10": [["시간이 있다면 갈 거예요.", "如果有時間就會去。"]],
+  "TOPIK 4 11": [["어렵더라도 포기하지 않을 거예요.", "即使困難也不會放棄。"]],
+  "TOPIK 4 12": [["그럴 리가 없어요.", "不可能那樣。"]],
+  "TOPIK 4 13": [["실수하기 마련이에요.", "難免會出錯。"]],
+  "TOPIK 4 14": [["줄어드는 경향이 있어요.", "有減少的傾向。"]],
+  "TOPIK 4 15": [["좋은 것으로 평가됩니다.", "被評價為好的。"]],
+  "TOPIK 4 16": [["맛있다고들 해요.", "大家都說好吃。"]],
+  "TOPIK 4 17": [["밥은커녕 물도 못 마셨어요.", "別說飯了，連水都沒喝。"]],
+  "TOPIK 4 18": [["죽을지언정 포기하지 않을 거예요.", "即使死也不會放棄。"]],
+  "TOPIK 4 19": [["비가 올 듯해요.", "好像要下雨了。"]],
+  "TOPIK 4 20": [["올 것이 분명해요.", "一定會來。"]],
+  "TOPIK 4 21": [["늦게 일어난 탓에 지각했어요.", "因為起晚了遲到了。"]],
+  "TOPIK 4 22": [["공부하다 보니 밤이 됐어요.", "讀書讀著讀著就天黑了。"]],
+  "TOPIK 4 23": [["어렸을 때 자주 가던 곳이에요.", "是小時候常去的地方。"]],
+  "TOPIK 4 24": [["오는 대로 연락할게요.", "一來就聯絡你。"]],
+  "TOPIK 4 25": [["알면서도 모른 척했어요.", "明明知道卻裝作不知道。"]],
+  "TOPIK 4 26": [["누구든지 간에 참여할 수 있어요.", "無論誰都可以參加。"]],
+  "TOPIK 4 27": [["울 지경이었어요.", "到了要哭的地步。"]],
+  "TOPIK 4 28": [["따라서 이 문제는 중요합니다.", "因此，這個問題很重要。"]],
+  "TOPIK 4 29": [["이에 비해 이 제품은 싸요.", "相比之下，這個產品比較便宜。"]],
+  "TOPIK 4 30": [["예를 들어 이 경우를 보세요.", "例如，看看這個情況。"]],
+  "TOPIK 4 31": [["결론적으로 이 방법이 좋습니다.", "總而言之，這個方法很好。"]],
+  "TOPIK 4 32": [["이렇게 생각합니다.", "我是這樣想的。"]],
+  "TOPIK 4 33": [["개선함이 바람직합니다.", "改善是可取的。"]],
+  "TOPIK 4 34": [["무시할 수 없다고 할 수 없어요.", "不能說可以忽視。"]],
+  "TOPIK 4 35": [["오셨습니다.", "您來了。"]]
+};
+function getExamples(row){const lesson=row.querySelector('.lesson-col')?.textContent.trim()||''; const topic=row.querySelector('.topic-col')?.textContent.trim()||''; let ex=EXAMPLES[lesson]||[]; if(!ex.length){const ec=row.querySelector('.example-col')?.innerText||''; ex=[[ec,topic]];} return {lesson,topic,ex};}
+const overlay=document.getElementById('modalOverlay'), modalTitle=document.getElementById('modalTitle'), modalSub=document.getElementById('modalSub'), modalBody=document.getElementById('modalBody');
+function openModal(row){const {lesson,topic,ex}=getExamples(row); modalTitle.textContent=lesson+' ・ 例句卡片'; modalSub.textContent=topic; modalBody.innerHTML=ex.map(([jp,zh])=>`<div class="ex-card"><span class="ex-tag">例句</span><button class="speak-btn" data-speak="${jp}">🔊 讀</button><b>${jp}</b><span>${zh}</span></div>`).join('')+'<p style="color:#64748b;font-size:.85rem;margin-top:8px">💡 小提示：大聲唸 2 次，再自己換一個主詞造句，記憶會更牢。</p>'; modalBody.querySelectorAll('[data-speak]').forEach(btn=>btn.addEventListener('click',e=>{e.stopPropagation(); speakKorean(btn.getAttribute('data-speak'),btn);})); overlay.classList.add('open'); if(document.getElementById('autoSpeak')?.checked && ex[0]) setTimeout(()=>speakKorean(ex[0][0],modalBody.querySelector('[data-speak]')),350);}
+function closeModal(){overlay.classList.remove('open'); window.speechSynthesis&&window.speechSynthesis.cancel();}
+document.querySelectorAll('tbody tr').forEach(row=>{const exCol=row.querySelector('.example-col'); if(exCol&&!exCol.querySelector('.speak-btn')){const b=document.createElement('button'); b.className='speak-btn'; b.textContent='🔊'; b.title='朗讀呢條嘅例句'; b.addEventListener('click',e=>{e.stopPropagation(); const ex=getExamples(row).ex; if(ex[0]) speakKorean(ex[0][0],b);}); exCol.appendChild(b);}});
+document.querySelectorAll('tbody tr').forEach(row=>row.addEventListener('click',()=>openModal(row)));
+document.getElementById('modalClose').addEventListener('click',closeModal); overlay.addEventListener('click',e=>{if(e.target===overlay) closeModal();}); document.addEventListener('keydown',e=>{if(e.key==='Escape') closeModal();});
+const filterBtns=document.querySelectorAll('.filter-btn'), sections=document.querySelectorAll('.section-card'), searchInput=document.getElementById('searchInput'), noResults=document.getElementById('noResults'); let currentFilter='all';
+function updateDisplay(){const q=searchInput.value.trim().toLowerCase(); let any=false; sections.forEach(s=>{const cat=s.getAttribute('data-category'); if(currentFilter!=='all'&&cat!==currentFilter){s.style.display='none';return;} let c=0; s.querySelectorAll('tbody tr').forEach(r=>{const t=r.textContent.toLowerCase(); if(t.includes(q)){r.style.display='';c++;} else r.style.display='none';}); if(c>0){s.style.display='block';any=true;} else s.style.display='none';}); noResults.style.display=any?'none':'block';}
+filterBtns.forEach(b=>b.addEventListener('click',()=>{filterBtns.forEach(x=>x.classList.remove('active')); b.classList.add('active'); currentFilter=b.getAttribute('data-filter'); updateDisplay();})); searchInput.addEventListener('input',updateDisplay);
+if('speechSynthesis' in window){window.speechSynthesis.onvoiceschanged=()=>{};}
+</script></body></html>
